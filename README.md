@@ -143,7 +143,7 @@ Configure your environment in `server/.env` (see `server/.env.example`):
 ```env
 MONGO_URI=mongodb://127.0.0.1:27017/book_exchange
 JWT_SECRET=your_super_secret_jwt_key
-PORT=5000
+PORT=5001
 ```
 *(If using MongoDB Atlas, make sure your IP is whitelisted in Network Access and replace `MONGO_URI` with your connection string).*
 
@@ -164,7 +164,7 @@ npm run dev
 ```
 
 - **Client App**: [http://localhost:5173](http://localhost:5173)
-- **API Server**: [http://localhost:5000](http://localhost:5000)
+- **API Server**: [http://localhost:5001](http://localhost:5001)
 
 ---
 

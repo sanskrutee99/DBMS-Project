@@ -23,7 +23,7 @@ app.use((err, _req, res, _next) => {
 mongoose.connect(process.env.MONGO_URI)
   .then(async () => {
     await Promise.all([Book.syncIndexes(), Request.syncIndexes()]); // make sure indexes exist
-    const port = process.env.PORT || 5000;
+    const port = process.env.PORT || 5001;
     app.listen(port, () => console.log('API on :' + port));
   })
   .catch((e) => { console.error('Mongo connection failed:', e.message); process.exit(1); });
